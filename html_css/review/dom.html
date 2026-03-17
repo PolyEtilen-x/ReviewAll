@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    InputName: <input type="text" id="name" value>
+    <button id="btn" onclick="xinchao">Submit</button>
+    <div id="loi_chao"></div>
+    <script>
+        var xinchao = function() {
+            var name = document.getElementById("name").value;
+            var loichao = "Xin chào " + name;
+            document.getElementById("loi_chao").innerHTML = loichao;
+        }
+        localStorage.setItem("name", "Nguyen Hong Ton");
+        localStorage.address = "Phu Yen";
+    </script>
+</body>
+</html>

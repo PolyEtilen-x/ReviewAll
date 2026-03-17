@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- href link mail -->
+    <a href="mailto:nguyenhongtonpy2004@gmail.com" target="_blank">
+        mail
+    </a>
+    // href link page
+    <a href="https://www.google.com" target="_blank">
+        google
+    </a>
+    //img
+    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    //img link
+    <a href="https://www.google.com" target="_blank">
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+    </a>
+    
+    <p>This is review html5 css</p>
+    <p>This is <b>review</b> html5 css</p>
+    <p>This is <i>review</i> html5 css</p>
+    <p>This is <u>review</u> html5 css</p>
+    <p>This is <sub>review</sub> html5 css</p>
+    <p>This is <sup>review</sup> html5 css</p>
+    <p>This is <small>review</small> html5 css</p>
+    <p>This is <mark>review</mark> html5 css</p>
+    <p>This is <del>review</del> html5 css</p>
+
+    <h1>Unordered List</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <ul>
+            <li>Subitem 1</li>
+            <li>Subitem 2</li>
+            <li>Subitem 3</li>
+        </ul>
+    </ul>
+    
+    <h1>Ordered List</h1>
+    <ol> //1. 2. 3.
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ol type="A"> //A. B. C.
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    //example dt like 1.1 and dd like 1.1.1 or tab 
+    <h1>Description List</h1>
+    <dl>
+        <dt>Term 1</dt>
+        <dd>Description for Term 1</dd>
+        <dt>Term 2</dt>
+        <dd>Description for Term 2</dd>
+        <dt>Term 3</dt>
+        <dd>Description for Term 3</dd>
+    </dl>
+
+    <h1>Table</h1>
+    <table bgcolor="#f0f0f0" border="1" cellpadding="10" cellspacing="0"> 
+        <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+            <td>Data 7</td>
+        </tr>
+    </table>
+
+    <h1>Button</h1>
+    <a href="google.com" target="_blank">
+        <button type="button" style="background-color: black; color: white; border-radius: 5px;">Click Me</button>
+    </a>
+
+    <h1>Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>JS</h1>
+    <script>
+        console.log("Hello, this is a JavaScript code snippet!");
+        alert("Hello, this is a JavaScript alert!");
+        document.write("Hello, this is a JavaScript document.write!");
+        let num = 10;
+        document.write("The value of num is: " + num);
+        num++;
+        num += 5;
+        document.write("The value of num after incrementing is: " + num);
+        let object = {
+            name: "Ton",
+            age: 20,
+            city: "Phu Yen"
+        };
+        let profile = "Toi la Nguyen Hong Ton, 20 tuoi, song o Phu Yen";
+        document.write(profile);
+        document.write("Name: " + object.name + ", Age: " + object.age + ", City: " + object.city);
+        document.write("The length of the profile string is: " + profile.length);
+        document.write("uppercase: " + profile.toUpperCase());
+        document.write("lowercase: " + profile.toLowerCase());
+        document.write("split: " + profile.split(","));
+        document.write(profile.includes("Ton") ? "The profile contains 'Ton'" : "The profile does not contain 'Ton'");
+
+        let arr = [1, 2, 3, 4, 5];
+        document.write("Array: " + arr);
+        let array = new Array(6, 7, 8, 9, 10);
+        array.push(11);
+        arr.push("Hello");
+        arr.pop();//xoa phan tu cuoi
+        arr.unshift("Start");//them phan tu vao dau
+        arr.shift();//xoa phan tu dau
+        document.write("Array index 1: " + array[1]);
+
+        let input = prompt("Enter a number:");
+        let number = parseInt(input);
+        if (number > 0) {
+            document.write("The number is positive.");
+        } else if (number < 0) {
+            document.write("The number is negative.");
+        } else {
+            document.write("The number is zero.");
+        }
+
+        const input1 = prompt("Enter a number (1, 2, or 3):");
+        switch (input1) {
+            case 1:
+                document.write("Input is 1");
+                break;
+            case 2:
+                document.write("Input is 2");
+                break;
+            case 3:
+                document.write("Input is 3");
+                break;
+            default:
+                document.write("Input is not 1, 2, or 3");
+        }
+
+
+    </script>
+</body>
+</html>
